@@ -38,7 +38,16 @@
 
       {{!-- Links --}}
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ rootPath }}">Link</a></li>
+        {{#if currentUser}}
+        <li>
+          <a href="/">
+            {{currentUser.username}}
+          </a>
+        </li>
+        <li>
+          <a href="/logout">Log Out</a>
+        </li>
+        {{/if}}
       </ul>
 
     </div><!-- /.navbar-collapse -->
