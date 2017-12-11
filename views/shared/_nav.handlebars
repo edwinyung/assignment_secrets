@@ -22,7 +22,16 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="{{ rootPath }}">Link</a></li>
+            {{#if currentUser}}
+            <li>
+              <a href="/">
+                {{currentUser.username}}
+              </a>
+            </li>
+            <li>
+              <a href="/logout">Log Out</a>
+            </li>
+            {{/if}}
           </ul>
         </li>
       </ul>
@@ -35,5 +44,3 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-

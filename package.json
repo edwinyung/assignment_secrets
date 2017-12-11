@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/edwinyung/assignment_secrets#readme",
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
     "cookie-session": "^2.0.0-beta.3",
@@ -33,6 +34,8 @@
     "lodash": "^4.17.4",
     "md5": "^2.2.1",
     "method-override": "^2.3.10",
+    "mongoose": "^4.13.6",
+    "mongoose-unique-validator": "^1.0.6",
     "morgan": "^1.9.0",
     "morgan-toolkit": "^1.0.2"
   }
