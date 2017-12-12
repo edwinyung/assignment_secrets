@@ -10,12 +10,12 @@
 </form>
 
 <h2>Your Secrets</h2>
+{{#each userSecrets as |userSecret|}}
 <div class="row">
-  {{#each userSecrets as |userSecret|}}
-  <span>{{userSecret.secret}}</span>
-  <span>Posted by: {{User.username}}</span>
-  {{/each}}
+  <span>{{userSecret}}</span>
+  <!--<span>Posted by: {{username1}}</span>-->
 </div>
+{{/each}}
 <h3>Requests for You!</h3>
 <div class="row">
 </div>
