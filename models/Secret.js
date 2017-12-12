@@ -5,7 +5,7 @@ const uniqueValidator = require("mongoose-unique-validator");
 const SecretSchema = mongoose.Schema(
   {
     secret: { type: String, required: true },
-    authorId: mongoose.Schema.Types.ObjectId,
+    user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
     requestUsers: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     approvedUsers: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }]
   },
